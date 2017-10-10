@@ -1,0 +1,9 @@
+<h1>Item reviews</h1>
+<%= form_tag("/reviews/#{@id}/filter") do %>
+  <%= label_tag(:keyword, "Keyword:") %>
+  <%= text_field_tag(:keyword) %>
+  <%= submit_tag("Filter") %>
+<% end %>
+<% @reviews.each do |review| %>
+  <p><%= review.text %></p>
+<% end %>

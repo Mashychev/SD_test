@@ -22,3 +22,12 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+# Generate Entity-Relationship Diagrams
+
+## Install Graphviz
+
+  `brew install graphviz`           # Homebrew on Mac OS X
+
+  `sudo port install graphviz`      # Macports on Mac OS X
+
+  `sudo aptitude install graphviz`  # Debian and Ubuntu

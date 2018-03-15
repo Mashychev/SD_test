@@ -24,7 +24,7 @@ Things you may want to cover:
 * ...
 # Generate Entity-Relationship Diagrams
 
-## Install Graphviz
+* Install Graphviz
 
   `brew install graphviz`           # Homebrew on Mac OS X
 

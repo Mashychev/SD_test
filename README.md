@@ -26,8 +26,12 @@ Things you may want to cover:
 
 * ## Install Graphviz
 
-  `brew install graphviz`           # Homebrew on Mac OS X
+  `brew install graphviz`            Homebrew on Mac OS X
 
-  `sudo port install graphviz`      # Macports on Mac OS X
+  `sudo port install graphviz`       Macports on Mac OS X
 
-  `sudo aptitude install graphviz`  # Debian and Ubuntu
+  `sudo apt-get install graphviz`    Debian and Ubuntu
+
+* ## Generate diagram
+
+  `bundle exec erd`

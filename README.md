@@ -44,11 +44,11 @@ bundle install
 rake assets:precompile
 ```
 
-##### Find your mysql.sock file
+##### Find path to your mysql.sock file
 
 ```bash mysqladmin variables | grep socket ```
 
-#####Then, add a line to your config/database.yml
+##### Then, add a path to your ```config/database.yml
 
 ```
 development:
@@ -57,8 +57,9 @@ development:
   username: root
   password: xxxx
   database: xxxx
-  socket: your path to mysql.sock
+  socket: your/path/to/mysql.sock
 ```
+##### Setting up db
 
 ```bash
 rake db:create

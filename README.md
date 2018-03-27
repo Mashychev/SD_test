@@ -48,7 +48,7 @@ rake assets:precompile
 
 ```bash mysqladmin variables | grep socket ```
 
-##### Then, add a path to your ```config/database.yml
+##### Then, add a path to your ```config/database.yml```
 
 ```
 development:

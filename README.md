@@ -35,3 +35,43 @@ Things you may want to cover:
 * ## Generate diagram
 
   `bundle exec erd`
+
+
+#### Installing Gems and prepare database
+```bash
+gem install bundler
+bundle install
+rake assets:precompile
+```
+
+##### Find your mysql.sock file
+
+```bash mysqladmin variables | grep socket ```
+
+#####Then, add a line to your config/database.yml
+
+```
+development:
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: xxxx
+  database: xxxx
+  socket: your path to mysql.sock
+```
+
+```bash
+rake db:create
+rake db:migrate
+rake db:seed
+```
+
+#### To start rails console:
+```bash
+rails c
+```
+
+#### To start web-server:
+```bash
+foreman start
+```
